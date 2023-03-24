@@ -34,6 +34,7 @@ set(${KIT}_TARGET_LIBRARIES
   vtkSlicerOpenIGTLinkIFModuleMRML
   vtkSlicer${MODULE_NAME}ModuleMRML
   vtkSlicer${MODULE_NAME}ModuleLogic
+  qMRMLWidgets
   )
 
 if (Slicer_VERSION VERSION_LESS "4.11.0")

@@ -33,6 +33,7 @@ set(${KIT}_RESOURCES
 
 set(${KIT}_TARGET_LIBRARIES
   vtkSlicerOpenIGTLinkIFModuleMRML
+  qMRMLWidgets
   )
 
 #-----------------------------------------------------------------------------

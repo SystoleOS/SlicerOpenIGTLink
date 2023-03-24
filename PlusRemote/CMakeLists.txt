@@ -1,3 +1,5 @@
+find_package(Qt5 REQUIRED COMPONENTS Multimedia)
+
 #-----------------------------------------------------------------------------
 set(MODULE_NAME PlusRemote)
 string(TOUPPER ${MODULE_NAME} MODULE_NAME_UPPER)
@@ -18,6 +20,8 @@ set(MODULE_INCLUDE_DIRECTORIES
   ${CMAKE_CURRENT_BINARY_DIR}/Logic
   ${CMAKE_CURRENT_SOURCE_DIR}/Widgets
   ${CMAKE_CURRENT_BINARY_DIR}/Widgets
+  ${Slicer_INSTALL_QTLOADABLEMODULES_INCLUDE_DIR}/vtkSlicerAnnotationsModuleMRML
+  ${Slicer_INSTALL_QTLOADABLEMODULES_INCLUDE_DIR}/vtkSlicerMarkupsModuleMRML
   )
 
 set(MODULE_SRCS
@@ -46,6 +50,7 @@ set(MODULE_TARGET_LIBRARIES
   qMRMLWidgets
   MRMLLogic
   qSlicerBaseQTCore
+  Qt5::Multimedia
   )
 
 set(MODULE_UI_SRCS

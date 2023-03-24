@@ -52,6 +52,7 @@ set(${KIT}_TARGET_LIBRARIES
   ${MRML_LIBRARIES}
   vtkSlicerOpenIGTLinkIFModuleLogic
   vtkSlicerOpenIGTLinkIFModuleMRML
+  qMRMLWidgets
   )
 
 #-----------------------------------------------------------------------------

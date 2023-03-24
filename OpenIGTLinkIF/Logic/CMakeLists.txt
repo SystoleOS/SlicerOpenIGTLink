@@ -8,6 +8,7 @@ set(${KIT}_INCLUDE_DIRECTORIES
   ${vtkSlicerOpenIGTLinkIFModuleMRML_SOURCE_DIR}
   ${vtkSlicerOpenIGTLinkIFModuleMRML_BINARY_DIR}
   ${OpenIGTLinkIO_INCLUDE_DIRS}
+  ${Slicer_INSTALL_QTLOADABLEMODULES_INCLUDE_DIR}/vtkSlicerColorsModuleLogic
   )
 
 set(${KIT}_SRCS

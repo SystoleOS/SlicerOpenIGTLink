@@ -25,6 +25,8 @@ LIST(APPEND ${KIT}_TARGET_LIBRARIES
   ${MRML_LIBRARIES}
   )
 
+link_directories(${Slicer_INSTALL_QTLOADABLEMODULES_LIB_DIR})
+
 #-----------------------------------------------------------------------------
 SlicerMacroBuildModuleMRML(
   NAME ${KIT}

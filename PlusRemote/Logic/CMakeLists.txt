@@ -10,6 +10,10 @@ set(${KIT}_INCLUDE_DIRECTORIES
   ${vtkSlicerVolumeRenderingModuleMRML_INCLUDE_DIRS}
   ${vtkSlicerVolumeRenderingModuleMRMLDisplayableManager_SOURCE_DIR}
   ${vtkSlicerVolumeRenderingModuleMRMLDisplayableManager_BINARY_DIR}
+  ${Slicer_INSTALL_QTLOADABLEMODULES_INCLUDE_DIR}/vtkSlicerAnnotationsModuleMRML
+  ${Slicer_INSTALL_QTLOADABLEMODULES_INCLUDE_DIR}/vtkSlicerMarkupsModuleMRML
+  ${Slicer_INSTALL_QTLOADABLEMODULES_INCLUDE_DIR}/vtkSlicerVolumeRenderingModuleLogic
+  ${Slicer_INSTALL_QTLOADABLEMODULES_INCLUDE_DIR}/vtkSlicerVolumeRenderingModuleMRML
   )
 
 set(${KIT}_SRCS

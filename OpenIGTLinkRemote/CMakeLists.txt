@@ -41,6 +41,8 @@ set(MODULE_RESOURCES
   Resources/qSlicer${MODULE_NAME}Module.qrc
   )
 
+link_directories(${Slicer_INSTALL_QTLOADABLEMODULES_LIB_DIR})
+
 #-----------------------------------------------------------------------------
 slicerMacroBuildQtModule(
   NAME ${MODULE_NAME}

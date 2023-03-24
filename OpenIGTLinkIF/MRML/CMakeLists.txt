@@ -10,6 +10,7 @@ set(${KIT}_INCLUDE_DIRECTORIES
   ${CMAKE_CURRENT_SOURCE_DIR}/../Logic
   ${CMAKE_CURRENT_BINARY_DIR}/../Logic
   ${OpenIGTLinkIO_INCLUDE_DIRS}
+  ${Slicer_INSTALL_QTLOADABLEMODULES_INCLUDE_DIR}/vtkSlicerMarkupsModuleMRML
   )
 
 set(${KIT}_SRCS
@@ -43,7 +44,11 @@ set(${KIT}_TARGET_LIBRARIES
   vtkSlicerAnnotationsModuleMRML
   vtkSlicerMarkupsModuleMRML
   qSlicerBaseQTGUI
+  ${Slicer_Base_LIBRARIES}
+  ${CTK_LIBRARIES}
   )
+
+link_directories(${Slicer_INSTALL_QTLOADABLEMODULES_LIB_DIR})
 
 #-----------------------------------------------------------------------------
 SlicerMacroBuildModuleMRML(
